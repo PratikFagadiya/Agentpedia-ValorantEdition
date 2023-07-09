@@ -4,6 +4,7 @@
 
 Agentpedia Showcase is an Android app developed with clean architecture and Jetpack Compose. Explore animated Valorant agents and their abilities in a modern UI. This project focuses on learning clean architecture with Jetpack Compose, providing a valuable resource for developers. Experience immersive agent showcases and enhance your understanding of clean architecture principles in Android app development.
 
+![GitHub Cards Preview](https://github.com/PratikFagadiya/ValorantAgentsCompose/blob/master/art/banner.jpg?raw=true)
 
 *Made with love ❤️ by [Pratik Fagadiya](https://github.com/PratikFagadiya)*
 
