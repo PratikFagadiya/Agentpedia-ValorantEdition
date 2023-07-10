@@ -12,22 +12,53 @@ https://github.com/PratikFagadiya/ValorantAgentsCompose/assets/66842132/6ff5d0d3
 
 *Made with love ❤️ by [Pratik Fagadiya](https://github.com/PratikFagadiya)*
 
+![](https://camo.githubusercontent.com/d24f2f8414437a9491ea3145cafd373167315d50/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6275696c742d776974682d6c6f76652e737667) ![](https://camo.githubusercontent.com/e82fcde6b4952d69611ae4cf507b13fe6ae8e028/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6275696c742d666f722d616e64726f69642e737667)
+<br>
+<br>
+
+# Built With 
+
+- [Jetpack Compose](https://developer.android.com/jetpack/compose) : A modern UI toolkit for building native Android apps.
+- [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) : A software architecture principle that promotes separation of concerns and maintainability.
+- [Dagger Hilt](https://dagger.dev/hilt/) : A dependency injection library for Android that simplifies the integration of Dagger into Android apps.
+- [Retrofit](https://square.github.io/retrofit/) : A type-safe HTTP client for Android and Java that makes it easy to consume RESTful web services.
+- [Coroutine Flow](https://kotlinlang.org/docs/flow.html) : A Kotlin library that provides a reactive programming model with support for asynchronous and stream-based data flow.
+
+
+
+
+
+<br>
+
 # Donate
 
-> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
->
-> [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/pratikf)
+ If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
+ 
+ [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/pratikf)
 
 
+<br>
 
 ## Find this project useful ? ❤️
 
 - Support it by clicking the ⭐️ button on the upper right of this page. ✌️
 
+<br>
+
 ## Contribution 🤝
 
-- 😍 If you would like to contribute you're most welcome! 💛
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated** 💛.
 
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<br>
 
 ## Connect with me
 <div align="left">
