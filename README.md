@@ -6,6 +6,10 @@ Agentpedia Showcase is an Android app developed with clean architecture and Jetp
 
 ![GitHub Cards Preview](https://github.com/PratikFagadiya/ValorantAgentsCompose/blob/master/art/banner.jpg?raw=true)
 
+### Video Preview 🎥
+
+https://github.com/PratikFagadiya/ValorantAgentsCompose/assets/66842132/6ff5d0d3-26e7-4781-9b4f-f35253236685
+
 *Made with love ❤️ by [Pratik Fagadiya](https://github.com/PratikFagadiya)*
 
 # Donate
@@ -13,6 +17,7 @@ Agentpedia Showcase is an Android app developed with clean architecture and Jetp
 > If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
 >
 > [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/pratikf)
+
 
 
 ## Find this project useful ? ❤️
