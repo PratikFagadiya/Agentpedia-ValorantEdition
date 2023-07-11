@@ -45,6 +45,20 @@ https://github.com/PratikFagadiya/ValorantAgentsCompose/assets/66842132/6ff5d0d3
 
 <br>
 
+## Special Thanks 💖
+
+I would like to express my sincere gratitude to the following individuals and resources for their inspiration to this project:
+
+- Dribbel ([Malik Abimanyu](https://dribbble.com/abimanyu17)) : for sharing the design inspiration. You can find the design that served as an inspiration for this project at Dribbble.
+
+- The artist behind the [Image](https://i.pinimg.com/originals/cf/f4/57/cff457be0cf8019d883f7fa08063cae3.png) available at Pinterest, which also provided creative inspiration for this project.
+
+- [Valorant API](https://valorant-api.com/) for providing a free API that allows access to various data related to the game Valorant. Their API was instrumental in retrieving the necessary information for this project.
+
+I would like to extend my heartfelt appreciation to these sources, as they played an essential role in shaping and enhancing this project. Their contributions are greatly valued.
+
+<br>
+
 ## Contribution 🤝
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated** 💛.
