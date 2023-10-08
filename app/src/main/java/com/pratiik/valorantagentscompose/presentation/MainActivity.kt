@@ -1,6 +1,5 @@
 package com.pratiik.valorantagentscompose.presentation
 
-
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -27,9 +26,11 @@ import com.pratiik.valorantagentscompose.presentation.ui.theme.ValorantJetpackCo
 import com.pratiik.valorantagentscompose.presentation.viewmodels.AgentViewModel
 import com.pratiik.valorantagentscompose.presentation.viewmodels.SplashViewModel
 import dagger.hilt.android.AndroidEntryPoint
+
 @Keep
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    
     private val splashViewModel by viewModels<SplashViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
