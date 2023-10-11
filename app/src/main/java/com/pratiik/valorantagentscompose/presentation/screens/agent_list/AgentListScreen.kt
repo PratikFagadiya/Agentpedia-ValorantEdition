@@ -19,8 +19,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -80,13 +80,19 @@ fun AgentListScreen(agentState: State<AgentStates>, navigateToDetailScreen: (Age
     ) {
 
         if (agentList.isLoading) {
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
                 CircularProgressIndicator(color = Color.White)
             }
         }
 
         if (agentList.error.isNotBlank()) {
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
                 Text(text = "Data Not Found")
             }
         }
@@ -135,7 +141,9 @@ fun AgentListScreen(agentState: State<AgentStates>, navigateToDetailScreen: (Age
                             }
 
                             alpha = lerp(
-                                start = 0.3F, stop = 1f, fraction = 1f - pageOffset.coerceIn(0f, 1f)
+                                start = 0.3F,
+                                stop = 1f,
+                                fraction = 1f - pageOffset.coerceIn(0f, 1f)
                             )
 
                         }) {
@@ -154,10 +162,10 @@ fun AgentListScreen(agentState: State<AgentStates>, navigateToDetailScreen: (Age
                 AnimatedContent(
                     targetState = agents[pagerState.currentPage].displayName,
                     transitionSpec = {
-
                         fadeIn() with fadeOut()
-                    }) {
-
+                    },
+                    label = "AgentDisplayName"
+                ) {
                     it?.let { it1 ->
                         Text(
                             text = it1.uppercase(Locale.getDefault()),
@@ -177,28 +185,37 @@ fun AgentListScreen(agentState: State<AgentStates>, navigateToDetailScreen: (Age
 
                 Spacer(modifier = Modifier.height(25.dp))
 
-                LazyVerticalGrid(
-                    columns = GridCells.Fixed(agents[pagerState.currentPage].abilities?.size ?: 0),
-                    modifier = Modifier.padding(horizontal = 60.dp),
-                    horizontalArrangement = Arrangement.spacedBy(15.dp)
-                ) {
+                agents[pagerState.currentPage].abilities?.let {
 
-                    agents[pagerState.currentPage].abilities?.let {
-                        items(count = it.size) { abilityIndex ->
+                    LazyRow(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(start = 16.dp, end = 16.dp),
+                        horizontalArrangement = Arrangement.spacedBy(
+                            16.dp,
+                            alignment = Alignment.CenterHorizontally
+                        )
+                    ) {
+                        agents[pagerState.currentPage].abilities?.let {
+                            items(count = it.size) { abilityIndex ->
 
-                            AsyncImage(
-                                model = ImageRequest.Builder(LocalContext.current)
-                                    .data(it[abilityIndex].displayIcon).crossfade(true).build(),
-                                contentDescription = null,
-                                modifier = Modifier
-                                    .clip(RoundedCornerShape(10.dp))
-                                    .background(BackgroundNavyBlue2)
-                                    .aspectRatio(1F)
-                                    .padding(10.dp),
-                                contentScale = ContentScale.Inside
-                            )
+                                AsyncImage(
+                                    model = ImageRequest.Builder(LocalContext.current)
+                                        .data(it[abilityIndex].displayIcon).crossfade(true).build(),
+                                    contentDescription = null,
+                                    modifier = Modifier
+                                        .height(50.dp)
+                                        .width(50.dp)
+                                        .clip(RoundedCornerShape(10.dp))
+                                        .background(BackgroundNavyBlue2)
+                                        .aspectRatio(1F)
+                                        .padding(10.dp),
+                                    contentScale = ContentScale.Inside
+                                )
 
+                            }
                         }
+
                     }
                 }
 

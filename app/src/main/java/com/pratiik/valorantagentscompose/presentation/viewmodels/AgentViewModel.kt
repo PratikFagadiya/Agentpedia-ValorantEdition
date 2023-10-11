@@ -12,10 +12,10 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
 @Keep
 @HiltViewModel
-class AgentViewModel
-@Inject constructor(
+class AgentViewModel @Inject constructor(
     private val getAgentUseCase: GetAgentUseCase
 ) : ViewModel() {
 
