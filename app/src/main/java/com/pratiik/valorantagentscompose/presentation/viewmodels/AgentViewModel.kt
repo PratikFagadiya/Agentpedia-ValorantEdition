@@ -26,6 +26,10 @@ class AgentViewModel
         getAllAgent()
     }
 
+    /**
+     * This function needs to be executed on MAIN thread
+     * Because it is interacting with the UI state and can only be done from UI thread (MAIN)
+     */
     private fun getAllAgent() = viewModelScope.launch {
 
         getAgentUseCase(true).collect {
