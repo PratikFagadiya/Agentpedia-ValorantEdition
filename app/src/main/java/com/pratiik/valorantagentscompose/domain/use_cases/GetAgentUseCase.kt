@@ -9,8 +9,11 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
+
 @Keep
-class GetAgentUseCase @Inject constructor(private val agentRepository: AgentRepository) {
+class GetAgentUseCase @Inject constructor(
+    private val agentRepository: AgentRepository
+) {
 
     operator fun invoke(isPlayableCharacter: Boolean): Flow<Resource<List<AgentModel>>> = flow {
 

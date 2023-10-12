@@ -6,6 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 const val BASE_URL = "https://valorant-api.com/v1/"
+
 @Keep
 interface NetworkApiService {
 

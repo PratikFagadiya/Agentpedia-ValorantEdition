@@ -33,16 +33,16 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            // Use minifyEnabled in release build to make it impossible to be debug and reverse engineer
+            minifyEnabled true
             debuggable true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             signingConfig signingConfigs.release
         }
         debug {
-            minifyEnabled true
-            debuggable true
-
+            // Do not use minifyEnabled in debug build, it unnecessarily makes the build times longer
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

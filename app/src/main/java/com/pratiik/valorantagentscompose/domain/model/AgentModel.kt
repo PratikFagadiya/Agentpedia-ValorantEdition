@@ -2,8 +2,8 @@ package com.pratiik.valorantagentscompose.domain.model
 
 import android.os.Parcelable
 import androidx.annotation.Keep
-import com.pratiik.valorantagentscompose.domain.model.Ability
 import kotlinx.parcelize.Parcelize
+
 @Keep
 @Parcelize
 data class AgentModel(
